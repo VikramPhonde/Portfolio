@@ -1,0 +1,187 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth
+  }
+
+.Navbar{
+    padding: 0;
+    margin: 0;
+    height: 100px;
+    color: black;
+    background-color: white;
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+
+
+.underline-effect{
+    cursor: pointer;
+}
+
+.underline-effect:after{
+    content: '';
+    display: block;
+    width: 0%;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transition: 0.3s ease-out;
+    transform-origin: bottom right;
+}
+
+.underline-effect:hover:after{
+    width: 100%;
+    transform-origin: bottom left;
+}
+
+h2{
+    margin-right: 20px;
+}
+
+#darkmode{
+    cursor: pointer;
+}
+
+#enablemode{
+    margin-left: 0px;
+    height: 30px;
+    width: 30px;
+}
+
+.intro{
+    height: 600px;
+    margin-top: 20px;
+    display : flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.name{
+    font-size: 50px;
+    margin-top: 30px;
+}
+
+.role{
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.caption{
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.links{
+    margin-top: 20px;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#linkedinlogo{
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+#githublogo{
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 30px;
+}
+
+a{
+    margin-right: 20px;
+}
+
+.projects{
+    margin-top: 20px;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.projects_header{
+    font-size: 40px;
+}
+
+.project_1{
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.project_1 p{
+    margin-top: 20px;
+    margin-left: 250px;
+    margin-right: 250px;
+    word-wrap:break-word;
+    font-size: 20px;
+}
+
+.project_img{
+    margin-top: 20px;
+    height: 500px;
+    width: 1000px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.projecttitle{
+    font-size: 30px;
+    margin-top: 15px;
+}
+
+.button_light{
+    margin-top: 20px;
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.button_light:hover {
+    /* background-color: var(--clr-blue-accent); */
+    background: blue;
+}
+
+.button_dark{
+    margin-top: 20px;
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #111;
+    background: #fff;
+    cursor: pointer;
+    position: relative;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.button_dark:hover {
+    /* background-color: var(--clr-blue-accent); */
+    background: blue;
+}
+
